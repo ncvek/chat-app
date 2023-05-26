@@ -1,0 +1,78 @@
+* {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: url(./images/background.jpg) no-repeat center fixed;
+    background-size: cover;
+    font-size: 16px;
+    max-height: 100%;
+    display:flex;
+    flex-direction: column; 
+}
+
+h1 {
+  font-size: 36px;
+  margin: 10px;
+  color: #fff; 
+  text-shadow: 2px 2px 4px rgba(152, 143, 173, 0.822);
+}
+
+.messages-container {
+  width: auto;
+  max-width: 80%;
+  height: 500px;
+  padding: 20px;
+  margin: 10px auto;
+  background-color: #494949;
+  opacity: 0.7;
+  border-radius: 10px;
+  overflow-y: scroll;
+  flex-shrink: 1;
+}
+
+.form-container {
+  display: flex;
+  margin: 20px 150px;
+  flex-shrink: 0;
+}
+
+.form-container .name,
+.form-container .content {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-container .name {
+  width: 200px;
+}
+
+.form-container .btn {
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(152, 143, 173, 0.822);
+}
+
+.form-container .btn:hover {
+  background-color: rgba(101, 96, 112, 0.822);
+}
+
+.user{
+  color:aquamarine;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.message {
+  padding: 5px 0;
+  color:white;
+} 
+
